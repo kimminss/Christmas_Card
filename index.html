@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Day</title>
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/christmas-46/64/christmas-icon-tree-512.png">
+
+    <meta property="og:image"
+        content="https://www.rcn.org.uk/-/media/royal-college-of-nursing/images/news-800x400/2020/christmas-image-800x400.jpg">
+    <meta property="og:title" content="2021년 크리스마스 카드">
+    <meta property="og:description" content="2021년의 민서가">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Gamja Flower', cursive;
+        }
+
+        body {
+            background-color: #46426e;
+        }
+
+        .envelope {
+            width: 540px;
+            height: 540px;
+
+            background-image: url('https://i.pinimg.com/originals/74/d8/3b/74d83b67ad2bc7e15346f575b3fd57bb.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0 auto;
+
+            cursor: pointer;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .santa {
+            width: 400px;
+            height: 200px;
+
+            background-image: url('https://i.pinimg.com/originals/6d/71/d1/6d71d11b06a197e14cefe44bb55f19c7.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+        }
+
+        h1 {
+            font-size: 45px;
+
+            color: white;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+
+            width: 400px;
+
+            margin: auto;
+
+            color: rgb(1, 12, 7);
+
+            padding: 30px;
+
+            font-size: 22px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 20px 0px white;
+        }
+
+        .from {
+            text-align: right;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+                font-size: 20px;
+            }
+
+            .envelope {
+                width: 360px;
+                height: 300px;
+                margin: 160px auto 0 auto;
+            }
+
+            .santa {
+                width: 285px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+    </div>
+
+    <div class="letter-open">
+        <div class="santa"></div>
+        <h1>Merry Christmas</h1>
+        <div class="messagebox">
+            Merry Christmas to you! <br />
+            May all your dreams for the coming year <br />
+            be fulfilled and may you find joy and love. <br />
+            <p class="from">2021.12.25 min seo</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
